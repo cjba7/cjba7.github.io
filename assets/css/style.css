@@ -1335,40 +1335,60 @@ address {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  color: #323232;
-  height: 100%;
-  background-color: white;
-  background-image: linear-gradient(60deg, rgba(255, 255, 255, 0.66) 6%, rgba(255, 255, 255, 0.15)), url("../images/bg.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: center center, bottom center;
-  background-attachment: fixed, fixed;
-  padding-top: 90px; }
+html {
+  background: url(../images/bg.jpg) fixed;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 110%; }
+  html body {
+    background: none;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100; }
+  html body, html body a:link, html body a:visited {
+    color: white;
+    text-decoration: none; }
+  html body a {
+    cursor: pointer;
+    transition: 0.3s all; }
+    html body a:hover {
+      color: #ffcc00; }
+  html div#wrapper {
+    padding: 75px 50px 75px;
+    display: block;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 100px;
+    background: rgba(0, 0, 0, 0.25); }
+  html section#contact {
+    font-size: 25px; }
+    html section#contact span#name {
+      font-size: 40px;
+      font-weight: 700; }
+    html section#contact span {
+      display: block; }
 
-.avatar img {
-  border-radius: 50%;
-  max-width: 150px; }
+@media (max-width: 768px) {
+  html {
+    background: url(../images/bg.jpg) fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center; }
 
-#main {
-  background-color: #fdfdfd;
-  border-radius: 3px;
-  font-weight: 300;
-  margin: auto;
-  max-width: 400px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.8); }
-  #main h1 {
-    font-size: 28px; }
-  #main div.info {
-    display: inline-block;
-    width: 150px; }
+  div#wrapper {
+    padding: 25px 15px 25px; }
 
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
+  section#contact {
+    font-size: 20px; }
+    section#contact span#name {
+      font-size: 45px; }
+    section#contact span:not(#name) {
+      display: inline-block; } }
 
 /*# sourceMappingURL=style.css.map */

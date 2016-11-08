@@ -1,0 +1,75 @@
+html
+  background: url(../images/bg.jpg) fixed
+  background-repeat: no-repeat
+  background-position-x: 50%
+  background-position-y: 50%
+  background-size: 110%
+
+
+  body
+    background: none
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-weight: 100
+
+
+  body, body a:link, body a:visited
+    color: white
+    text-decoration: none
+
+
+  body a
+    cursor: pointer
+    transition: 0.3s all
+
+    &:hover
+      color: rgb(255, 204, 0)
+
+
+  div#wrapper
+    padding: 75px 50px 75px
+    display: block
+    bottom: 0
+    position: fixed
+    width: 100%
+    text-align: right
+    margin-bottom: 100px
+    background: rgba(0, 0, 0, 0.25)
+
+
+  section#contact
+    font-size: 25px
+
+    span#name
+      font-size: 40px
+      font-weight: 700
+
+    span
+      display: block
+
+
+
+
+@media (max-width: 768px)
+  html
+    background: url(../images/bg.jpg) fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position-x: center
+    background-position-y: center
+
+
+  div#wrapper
+    padding: 25px 15px 25px
+
+
+  section#contact
+    font-size: 20px
+
+    span#name
+      font-size: 45px
+
+    span:not(#name)
+      display: inline-block
