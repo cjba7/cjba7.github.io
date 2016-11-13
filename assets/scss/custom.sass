@@ -1,75 +1,51 @@
-html
-  background: url(../images/bg.jpg) fixed
-  background-repeat: no-repeat
-  background-position-x: 50%
-  background-position-y: 50%
-  background-size: 110%
+body
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif
 
 
-  body
-    background: none
-    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif
-    font-weight: 100
+body, body a:link, body a:visited
+  background-color: rgb(250, 250, 250)
+  color: rgb(40, 40, 40)
+  text-decoration: none
 
 
-  body, body a:link, body a:visited
-    color: white
-    text-decoration: none
+body a
+  cursor: pointer
+  transition: 0.3s all
+
+  &:hover
+    color: rgb(183, 183, 183)
 
 
-  body a
-    cursor: pointer
-    transition: 0.3s all
+div#header-wrapper
+  background-color: rgb(40, 40, 40)
+  color: rgb(250, 250, 250)
+  padding-top: 135px
+  padding-bottom: 135px
 
-    &:hover
-      color: rgb(255, 204, 0)
+  header
+    margin: auto
+    text-align: left
+    width: 195px
 
-
-  div#wrapper
-    padding: 75px 50px 75px
-    display: block
-    bottom: 0
-    position: fixed
-    width: 100%
-    text-align: right
-    margin-bottom: 100px
-    background: rgba(0, 0, 0, 0.25)
-
-
-  section#contact
-    font-size: 25px
-
-    span#name
+    h1
       font-size: 40px
-      font-weight: 700
+      font-weight: 400
+      line-height: 46px
+      letter-spacing: 6px
+      margin: 0
 
     span
       display: block
 
 
+section
+  font-size: 22px
+  font-weight: 300
+  line-height: 35px
+  text-align: center
+  padding-top: 50px
+  padding-bottom: 50px
 
+  span
+    display: block
 
-@media (max-width: 768px)
-  html
-    background: url(../images/bg.jpg) fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
-    background-repeat: no-repeat
-    background-position-x: center
-    background-position-y: center
-
-
-  div#wrapper
-    padding: 25px 15px 25px
-
-
-  section#contact
-    font-size: 20px
-
-    span#name
-      font-size: 45px
-
-    span:not(#name)
-      display: inline-block
